@@ -4,7 +4,7 @@
 # You can copy this to one of:
 # - "/etc/mysql/my.cnf" to set global options,
 # - "~/.my.cnf" to set user-specific options.
-#
+# 
 # One can use all long options that the program supports.
 # Run program with --help to get a list of available options and with
 # --print-defaults to see which it would actually understand and use.
@@ -58,7 +58,7 @@ myisam-recover-options  = BACKUP
 # * Query Cache Configuration
 #
 query_cache_limit	= 1M
-query_cache_size        = 16M
+query_cache_size    = 16M
 #
 # * Logging and Replication
 #
@@ -104,7 +104,7 @@ max_binlog_size   = 100M
 # ssl-cert=/etc/mysql/server-cert.pem
 # ssl-key=/etc/mysql/server-key.pem
 
-collation-server = utf8_general_ci
-init-connect='SET NAMES utf8'
-character-set-server = utf8
-sql_mode = STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+collation-server        = utf8_general_ci
+init-connect            = 'SET NAMES utf8'
+character-set-server    = utf8
+sql_mode                = STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
