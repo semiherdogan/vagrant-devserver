@@ -24,9 +24,11 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2048"
+    vb.cpus = "2"
+    #vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
   end
 
-  # config.vm.provision "shell", path: "scripts/sync_apache_config.sh"
+  # config.vm.provision "shell", path: "scripts/sync_config_files.sh"
 
   # config.trigger.before :up do |trigger|
   #   trigger.info = "Running a before up trigger!"
