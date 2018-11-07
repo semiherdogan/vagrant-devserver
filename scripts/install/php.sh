@@ -14,6 +14,8 @@ php7.2-xml \
 php7.2-mbstring \
 php7-2.curl \
 php7-2.mongodb \
+php7-2.memcached \
+php7-2.redis \
 \
 php5.6-cli \
 php5.6-fpm \
@@ -24,4 +26,6 @@ php5.6-gd \
 php5.6-xml \
 php5.6-mbstring \
 php5.6.curl \
-php5.6.mongodb
+php5.6.mongodb \
+php5.6.memcached \
+php5.6.redis

@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
+apt install curl zip
+
 ./install/apache.sh
 ./install/mongodb.sh
 ./install/mysql.sh
 ./install/php.sh
 ./install/redis.sh
+./install/composer.sh
+./install/node.sh
 
 a2enmod proxy_fcgi setenvif alias rewrite
 a2enconf php7.2-fpm
