@@ -3,12 +3,13 @@
 apt install curl zip
 
 ./install/apache.sh
-./install/mongodb.sh
 ./install/mysql.sh
-./install/php.sh
+./install/mongodb.sh
 ./install/redis.sh
-./install/composer.sh
+./install/memcached.sh
 ./install/node.sh
+./install/php.sh
+./install/composer.sh
 
 a2enmod proxy_fcgi setenvif alias rewrite
 a2enconf php7.2-fpm
