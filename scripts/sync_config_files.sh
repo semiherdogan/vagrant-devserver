@@ -26,3 +26,9 @@ cp $CURRENT_DIR/../conf/memcached.conf /etc/
 rm -rf /etc/apache2/sites-enabled_old
 mv /etc/apache2/sites-enabled /etc/apache2/sites-enabled_old
 cp $CURRENT_DIR/../sites-enabled /etc/apache2/
+
+
+# systemctl restart apache2
+# systemctl restart mysql
+# systemctl restart redis
+# /etc/init.d/memcached restart
