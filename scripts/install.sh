@@ -2,14 +2,14 @@
 
 apt install curl zip
 
-./install/apache.sh
-./install/mysql.sh
-./install/mongodb.sh
-./install/redis.sh
-./install/memcached.sh
-./install/node.sh
-./install/php.sh
-./install/composer.sh
+sh install/apache.sh
+sh install/mysql.sh
+sh install/mongodb.sh
+sh install/redis.sh
+sh install/memcached.sh
+sh install/node.sh
+sh install/php.sh
+sh install/composer.sh
 
 # SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'"

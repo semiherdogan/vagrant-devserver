@@ -3,7 +3,7 @@
 
 add-apt-repository ppa:ondrej/php
 
-apt install \
+apt install -y \
 php7.2-cli \
 php7.2-fpm \
 php7.2-zip \
