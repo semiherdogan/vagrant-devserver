@@ -19,4 +19,3 @@ mysql -u root -proot -e "FLUSH PRIVILEGES"
 a2enmod proxy_fcgi setenvif alias rewrite
 a2enconf php7.2-fpm
 a2enconf php5.6-fpm
-systemctl restart apache2
