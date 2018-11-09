@@ -1,5 +1,8 @@
 ## Ubuntu 18 Vagrant Box
 
+# Info
+* IP: 192.168.20.20
+
 ### Installed
 
 * Apache2
