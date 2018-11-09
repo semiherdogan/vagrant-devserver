@@ -16,7 +16,7 @@ cp $CURRENT_DIR/../conf/memcached.conf /etc/
 
 # Apache vhost config
 rm -rf /etc/apache2/sites-enabled/*
-cp $CURRENT_DIR/../sites-enabled /etc/apache2/
+cp -r $CURRENT_DIR/../sites-enabled/ /etc/apache2/
 
 # Apache config
 cp $CURRENT_DIR/../conf/php56.conf /etc/apache2/
@@ -24,5 +24,5 @@ cp $CURRENT_DIR/../conf/php56.conf /etc/apache2/
 
 # systemctl restart apache2
 # systemctl restart mysql
-# systemctl restart redis
 # /etc/init.d/memcached restart
+# systemctl restart redis
