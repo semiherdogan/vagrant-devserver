@@ -1,6 +1,8 @@
 
 #!/usr/bin/env bash
 
+LC_ALL=en_US.UTF-8
+
 add-apt-repository ppa:ondrej/php
 
 apt install -y \
@@ -18,6 +20,7 @@ php7.2-memcached \
 php7.2-redis \
 php5.6-cli \
 php5.6-fpm \
+php5.6-common \
 php5.6-zip \
 php5.6-mcrypt \
 php5.6-mysql \

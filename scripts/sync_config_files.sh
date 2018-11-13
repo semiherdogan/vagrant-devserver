@@ -21,7 +21,6 @@ cp -r $CURRENT_DIR/../sites-enabled/ /etc/apache2/
 # Apache config
 cp $CURRENT_DIR/../conf/php56.conf /etc/apache2/
 
-
 # systemctl restart apache2
 # systemctl restart mysql
 # /etc/init.d/memcached restart
