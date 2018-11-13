@@ -1,9 +1,19 @@
 ## Ubuntu 18 Vagrant Box
 
-# Info
+# Info
+
 * IP: 192.168.20.20
 
-### Installed
+## Forwarded Ports
+* 80 - 8080
+* 443 - 44300
+* 3306 - 33060 (mysql)
+* 27017 - 27017 (mongodb)
+* 6379 - 6379 (redis)
+* 11211 - 11211 (memcached)
+* from 3000 to 3010 (for debug purposes)
+
+## Installed
 
 * Apache2
 * php7.2
@@ -14,7 +24,7 @@
 * memcached
 * nodejs
 
-### TODO's
+## TODO's
 
 * bash aliases
 * php.ini files from conf
