@@ -1,7 +1,7 @@
 
 #!/usr/bin/env bash
 
-LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 
 apt install -y \
 php7.2-cli \
