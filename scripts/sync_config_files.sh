@@ -9,7 +9,7 @@ cp $CURRENT_DIR/../conf/apache2.conf /etc/apache2/
 cp $CURRENT_DIR/../conf/mysqld.cnf /etc/mysql/mysql.conf.d/
 
 # Redis config
-cp $CURRENT_DIR/../conf/redis.conf /etc/redis/
+# cp $CURRENT_DIR/../conf/redis.conf /etc/redis/
 
 # Memcached config
 cp $CURRENT_DIR/../conf/memcached.conf /etc/
@@ -24,4 +24,4 @@ cp $CURRENT_DIR/../conf/php56.conf /etc/apache2/
 systemctl restart apache2
 systemctl restart mysql
 /etc/init.d/memcached restart
-# systemctl restart redis
+# systemctl restart redis
