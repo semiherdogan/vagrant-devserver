@@ -6,7 +6,7 @@ sh install/apache.sh
 
 sh install/mysql.sh
 sh install/mongodb.sh
-# sh install/redis.sh
+sh install/redis.sh
 sh install/memcached.sh
 
 sh install/php.sh
