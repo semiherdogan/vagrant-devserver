@@ -11,12 +11,11 @@
 * 27017 - 27017 (mongodb)
 * 6379 - 6379 (redis)
 * 11211 - 11211 (memcached)
-* from 3000 to 3010 (for debug purposes)
 
 ## Installed
 
 * Apache2
-* php7.2
+* php7.3
 * php5.6
 * composer
 * mysql 5.7
@@ -32,4 +31,3 @@
 * Yarn, Bower, Grunt, and Gulp
 * Mailhog
 * ngrok
-* php 7.0, 7.1, 7.3 ?
