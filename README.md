@@ -15,7 +15,7 @@
 ## Installed
 
 * Apache2
-* php7.3
+* php7.2
 * php5.6
 * composer
 * mysql 5.7

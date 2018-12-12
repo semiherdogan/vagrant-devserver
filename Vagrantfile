@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
     #vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "2"]
   end
 
-  # config.vm.provision "shell", path: "scripts/sync_config_files.sh"
+  config.vm.provision "shell", path: "scripts/sync_config_files.sh", run: 'always'
 
   # config.trigger.before :up do |trigger|
   #   trigger.info = "Running a before up trigger!"
