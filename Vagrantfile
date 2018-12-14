@@ -7,6 +7,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/bionic64"
 
+  config.vm.network "private_network", ip: "192.168.20.20"
+
   config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
   config.vm.network "forwarded_port", guest: 443, host: 44300, host_ip: "127.0.0.1"
   config.vm.network "forwarded_port", guest: 3306, host: 33060, host_ip: "127.0.0.1" # mysql
@@ -14,8 +16,6 @@ Vagrant.configure("2") do |config|
   # config.vm.network "forwarded_port", guest: 11211, host: 11211, host_ip: "127.0.0.1" # memcached
   # config.vm.network "forwarded_port", guest: 6379, host: 6379, host_ip: "127.0.0.1" # redis
   # config.vm.usable_port_range = 3000..3010
-
-  config.vm.network "private_network", ip: "192.168.20.20"
 
   config.vm.synced_folder "www/", "/home/vagrant/www"
   config.vm.synced_folder "conf/", "/home/vagrant/conf"

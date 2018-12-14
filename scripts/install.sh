@@ -12,12 +12,12 @@ sh install/memcached.sh
 sh install/php.sh
 sh install/composer.sh
 
-sh install/node.sh
-sh install/yarn .sh
+# sh install/node.sh
+# sh install/yarn .sh
 
-# SELECT user,authentication_string,plugin,host FROM mysql.user;
-mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'"
-mysql -u root -proot -e "FLUSH PRIVILEGES"
+mysql -uroot -p"" -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY ''"
+mysql -uroot -p"" -e "UPDATE mysql.user SET host='%' WHERE user='root'"
+mysql -uroot -p"" -e "FLUSH PRIVILEGES"
 
 a2enmod proxy_fcgi actions setenvif alias rewrite
 a2enconf php7.2-fpm
