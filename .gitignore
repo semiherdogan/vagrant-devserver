@@ -1,2 +1,6 @@
 .DS_Store
 /.vagrant
+/www
+!/www/welcome.php
+!/www/php56.test/*
+!/www/php72.test/*
