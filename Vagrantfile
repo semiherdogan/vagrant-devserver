@@ -17,10 +17,10 @@ Vagrant.configure("2") do |config|
   # config.vm.network "forwarded_port", guest: 6379, host: 6379, host_ip: "127.0.0.1" # redis
   # config.vm.usable_port_range = 3000..3010
 
-  config.vm.synced_folder "www/", "/home/vagrant/www"
-  config.vm.synced_folder "conf/", "/home/vagrant/conf"
-  config.vm.synced_folder "scripts/", "/home/vagrant/scripts"
-  config.vm.synced_folder "sites-enabled/", "/home/vagrant/sites-enabled"
+  config.vm.synced_folder "./www", "/var/www/", mount_options: ["dmode=777","fmode=666"]
+  config.vm.synced_folder "./conf", "/home/vagrant/conf"
+  config.vm.synced_folder "./scripts", "/home/vagrant/scripts"
+  config.vm.synced_folder "./sites-enabled", "/home/vagrant/sites-enabled"
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2048"
