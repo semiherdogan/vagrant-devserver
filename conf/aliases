@@ -20,6 +20,7 @@ function show-welcome-message(){
 	for i in /etc/update-motd.d/*; do if [ "$i" != "/etc/update-motd.d/98-fsck-at-reboot" ]; then $i; fi; done
 }
 
+# From Homestead
 function dbexport() {
     FILE=${1:-/vagrant/mysqldump.sql.gz}
 
@@ -45,6 +46,7 @@ function dbexport() {
     echo "Done."
 }
 
+# From Homestead
 function dbimport() {
     FILE=${1:-/vagrant/mysqldump.sql.gz}
 
@@ -59,34 +61,4 @@ function dbimport() {
     fi
 
     echo "Done."
-}
-
-function php56() {
-    sudo update-alternatives --set php /usr/bin/php5.6
-    sudo update-alternatives --set php-config /usr/bin/php-config5.6
-    sudo update-alternatives --set phpize /usr/bin/phpize5.6
-}
-
-function php70() {
-    sudo update-alternatives --set php /usr/bin/php7.0
-    sudo update-alternatives --set php-config /usr/bin/php-config7.0
-    sudo update-alternatives --set phpize /usr/bin/phpize7.0
-}
-
-function php71() {
-    sudo update-alternatives --set php /usr/bin/php7.1
-    sudo update-alternatives --set php-config /usr/bin/php-config7.1
-    sudo update-alternatives --set phpize /usr/bin/phpize7.1
-}
-
-function php72() {
-    sudo update-alternatives --set php /usr/bin/php7.2
-    sudo update-alternatives --set php-config /usr/bin/php-config7.2
-    sudo update-alternatives --set phpize /usr/bin/phpize7.2
-}
-
-function php73() {
-    sudo update-alternatives --set php /usr/bin/php7.3
-    sudo update-alternatives --set php-config /usr/bin/php-config7.3
-    sudo update-alternatives --set phpize /usr/bin/phpize7.3
 }
