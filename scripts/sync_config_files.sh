@@ -42,16 +42,16 @@ then
     echo "Restarting memcached ..."
     /etc/init.d/memcached restart
 else
-    # echo "Memcached not exists."
+    echo "Memcached not exists."
 fi
 
 # Redis config
 if [ -d "/etc/redis/" ]
 then
     cp $CURRENT_DIR/../conf/redis.conf /etc/redis/
-    # systemctl restart redis
+    systemctl restart redis
 else
-    # echo "Redis config folder not exists."
+    echo "Redis config folder not exists."
 fi
 
 # PHP56 config
